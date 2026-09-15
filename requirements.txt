@@ -3,5 +3,6 @@ pyfamsa>=0.7
 clipkit>=2.0
 biopython>=1.83
 pandas
+openpyxl
 matplotlib
 jupyterlab

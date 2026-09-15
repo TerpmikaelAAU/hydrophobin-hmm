@@ -1,0 +1,7 @@
+pyhmmer>=0.12
+pyfamsa>=0.7
+biopython>=1.83
+numpy
+pandas
+matplotlib
+jupyterlab

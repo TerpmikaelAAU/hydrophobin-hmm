@@ -9,18 +9,22 @@ proteome, using profile HMMs built from characterised reference hydrophobins.
 |---|---|
 | `hydrophobins.ipynb` | the analysis |
 | `data/hydrophobin_references.fasta` | 21 characterised hydrophobins (10 class I, 11 class II) with NCBI/UniProt accessions |
+| `data/hydrophobin_names.tsv` | name and locus tag for each hit |
 | `data/protein.faa` | *A. arundinis* predicted proteome (15,721 proteins) |
 
 ## Result
 
-| Name | Accession | Class | E-value | Pfam |
-|---|---|---|---|---|
-| AaHFB1 | KAK8856621.1 | I | 4.0e-18 | PF01185 |
-| AaHFB2 | KAK8879197.1 | I | 3.2e-05 | no hit |
-| AaHFB3 | KAK8879637.1 | II | 1.3e-37 | PF06766 |
-| AaHFB4 | KAK8873671.1 | II | 3.9e-34 | PF06766 |
-| AaHFB5 | KAK8875145.1 | II | 6.5e-28 | PF06766 |
-| AaHFB6 | KAK8856546.1 | II | 7.8e-11 | PF06766 |
+| Name | Gene | Accession | Class | E-value | Pfam |
+|---|---|---|---|---|---|
+| AaHyd1 | PGQ11_000491 | KAK8879197.1 | I | 3.2e-05 | no hit |
+| AaHyd2 | PGQ11_012533 | KAK8856621.1 | I | 4.0e-18 | PF01185 |
+| AaHyd3 | PGQ11_000931 | KAK8879637.1 | II | 1.3e-37 | PF06766 |
+| AaHyd4 | PGQ11_004185 | KAK8873671.1 | II | 3.9e-34 | PF06766 |
+| AaHyd5 | PGQ11_005659 | KAK8875145.1 | II | 6.5e-28 | PF06766 |
+| AaHyd6 | PGQ11_012458 | KAK8856546.1 | II | 7.8e-11 | PF06766 |
+
+Names (class, then locus tag) are fixed in `data/hydrophobin_names.tsv`; the notebook stops if a
+hit is missing from it.
 
 ## Running
 

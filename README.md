@@ -9,7 +9,7 @@ proteome, using profile HMMs built from characterised reference hydrophobins.
 |---|---|
 | `hydrophobins.ipynb` | the analysis |
 | `data/hydrophobin_references.fasta` | 21 characterised hydrophobins (10 class I, 11 class II) with NCBI/UniProt accessions |
-| `data/hydrophobin_names.tsv` | name and locus tag for each hit |
+| `data/hydrophobin_names.tsv` | name, class and locus tag for each hit |
 | `data/protein.faa` | *A. arundinis* predicted proteome (15,721 proteins) |
 
 ## Result
@@ -23,8 +23,7 @@ proteome, using profile HMMs built from characterised reference hydrophobins.
 | AaHyd5 | PGQ11_005659 | KAK8875145.1 | II | 6.5e-28 | PF06766 |
 | AaHyd6 | PGQ11_012458 | KAK8856546.1 | II | 7.8e-11 | PF06766 |
 
-Names (class, then locus tag) are fixed in `data/hydrophobin_names.tsv`; the notebook stops if a
-hit is missing from it.
+Names (class, then locus tag) are fixed in `data/hydrophobin_names.tsv`.
 
 ## Running
 
